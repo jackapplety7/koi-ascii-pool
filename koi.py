@@ -143,6 +143,7 @@ def compose(fish, w, h, t, calm, bubbles):
 
     if not calm:
         for bx, by in bubbles:
+            by = int(by)
             if 1 <= by < water_y and 0 <= bx < w:
                 grid[by][bx] = "."
                 col[by][bx] = C_BUBBLE
